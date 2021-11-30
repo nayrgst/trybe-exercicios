@@ -4,8 +4,8 @@ let resultado = 0;
 let impares = 0;
 
 for (let index = 0; index < numbers.length; index += 1){
-    if (numbers[index] % 2 === 0) {
-       console.log (impares)
+    if (index == 5 % 2 === 0) {
+       console.log (index)
     } else {
         console.log ("Não a valores imapares")
     }
