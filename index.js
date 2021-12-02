@@ -48,22 +48,35 @@
 // console.log ('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + "'" + leitor.livrosFavoritos[0].titulo + "'" );
 
 
-function verificaPalindrome(geral){
-  for(index in geral){
-    if(geral[index] != geral[(geral.length - 1) - index]){
-      return false;
+// function verificaPalindrome(geral){
+//   for(index in geral){
+//     if(geral[index] != geral[(geral.length - 1) - index]){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// function verificaPalindrome(string){
+//   let geral2 = string.split('').reverse().join('');
+//     if (reverse === string) {
+//       return true;                              //ajuda com o gabarito do course da trybe
+//     } else {
+//       return false;
+//     }
+// }
+
+// console.log(verificaPalindrome('arara'));
+// console.log(verificaPalindrome('desenvolvimento'));
+
+function maior (numero){
+  let maior = 0;
+    for(let index in numero){
+      if (numero[maior] < numero[index]) {
+        maior = index;
+
+      }
     }
-  }
-  return true;
-}
-function verificaPalindrome(string){
-  let geral2 = string.split('').reverse().join('');
-    if (reverse === string) {
-      return true;                              //ajuda com o gabarito do course da trybe
-    } else {
-      return false;
-    }
+    return maior;
 }
 
-console.log(verificaPalindrome('arara'));
-console.log(verificaPalindrome('desenvolvimento'));
+console.log(maior([2, 3, 6, 7, 10, 1 ]));
