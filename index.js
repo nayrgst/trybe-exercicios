@@ -81,15 +81,28 @@
 
 // console.log(maior([2, 3, 6, 7, 10, 1 ]));
 
-function menor (numero){
-  let menor = 0;
-    for(let index in numero){
-      if (numero[menor] > numero[index]) {
-        menor = index;
+// function menor (numero){
+//   let menor = 0;
+//     for(let index in numero){
+//       if (numero[menor] > numero[index]) {
+//         menor = index;
+
+//       }
+//     }
+//     return menor;
+// }
+
+// console.log(menor([2, 4, 6, 7, 10, 0, -3]));
+
+function resultado (nomes){
+  let resultado = nomes[0];
+    for(let index in nomes){
+      if (resultado.length < nomes[index].length) {
+        resultado = nomes[index];
 
       }
     }
-    return menor;
+    return resultado;
 }
 
-console.log(menor([2, 4, 6, 7, 10, 0, -3]));
+console.log(resultado(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
