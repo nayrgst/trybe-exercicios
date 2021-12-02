@@ -2,5 +2,9 @@ let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  recorrente: 'sim'
 };
-console.log ('Bem-vinda, ' + info.personagem);
+    for( let all in info){
+        console.log (all)
+    }
+// console.log ('Bem-vinda, ' + info.personagem);
