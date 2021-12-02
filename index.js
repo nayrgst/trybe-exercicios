@@ -94,15 +94,25 @@
 
 // console.log(menor([2, 4, 6, 7, 10, 0, -3]));
 
-function resultado (nomes){
-  let resultado = nomes[0];
-    for(let index in nomes){
-      if (resultado.length < nomes[index].length) {
-        resultado = nomes[index];
+// function resultado (nomes){
+//   let resultado = nomes[0];
+//     for(let index in nomes){
+//       if (resultado.length < nomes[index].length) {
+//         resultado = nomes[index];
 
-      }
-    }
-    return resultado;
+//       }
+//     }
+//     return resultado;
+// }
+
+// console.log(resultado(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function total (numeros) {
+  let resultado = 0;
+  for (let index =0; index <= numeros; index += 1) {
+    resultado = resultado + index
+  }
+  return resultado;
 }
 
-console.log(resultado(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(total(5));
