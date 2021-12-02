@@ -68,15 +68,28 @@
 // console.log(verificaPalindrome('arara'));
 // console.log(verificaPalindrome('desenvolvimento'));
 
-function maior (numero){
-  let maior = 0;
+// function maior (numero){
+//   let maior = 0;
+//     for(let index in numero){
+//       if (numero[maior] < numero[index]) {
+//         maior = index;
+
+//       }
+//     }
+//     return maior;
+// }
+
+// console.log(maior([2, 3, 6, 7, 10, 1 ]));
+
+function menor (numero){
+  let menor = 0;
     for(let index in numero){
-      if (numero[maior] < numero[index]) {
-        maior = index;
+      if (numero[menor] > numero[index]) {
+        menor = index;
 
       }
     }
-    return maior;
+    return menor;
 }
 
-console.log(maior([2, 3, 6, 7, 10, 1 ]));
+console.log(menor([2, 4, 6, 7, 10, 0, -3]));
