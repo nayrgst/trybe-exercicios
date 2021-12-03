@@ -20,3 +20,7 @@
       .main-content .center-content p {
         font-style: italic;
       }
+
+      .center {
+          text-align: center;
+      }
