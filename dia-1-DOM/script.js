@@ -2,3 +2,7 @@ document.getElementById('descricao').innerText = "Se Deus quiser e tudo der cert
 
 document.getElementsByClassName('main-content')[0].style.backgroundColor = ('rgb(76,164,109');
 
+document.getElementsByClassName('center-content')[0].style.backgroundColor = ("white");
+
+
+
