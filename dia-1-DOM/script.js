@@ -10,5 +10,10 @@ document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
 document.getElementsByTagName('p')[1].style.textTransform = 'uppercase';
 document.getElementsByTagName('p')[2].style.textTransform = 'uppercase';
 
-let p1 =console.log (document.getElementsByTagName ('p'))
+function result () {
+ console.log (document.getElementsByTagName ('p'))
+}
+
+    result();
+
     
