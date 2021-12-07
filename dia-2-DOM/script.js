@@ -6,9 +6,10 @@
   let container6 = document.getElementsByClassName('numbers');
   let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
   
-  function createChild(element) {
+  function createChild(element, classe) {
   let newChild = document.createElement('h1');
   newChild.innerText = element;
+  newChild.setAttribute('class', 'title');
     return newChild;
   };
 
@@ -18,7 +19,7 @@
     return newChild;
     };
     
-
+  
   container.appendChild(createChild('Exercício 5.2 - JavaScript DOM'));
   container.appendChild(createChildMain('main-content'));
 
@@ -33,6 +34,7 @@
        function novoFilho(element) {
       let newChildMain = document.createElement('h3');
       newChildMain.className = element;
+      newChildMain.setAttribute('class', 'description');
       return newChildMain
     }
     
@@ -42,7 +44,7 @@
     container2[0].appendChild(childMain('center-content'));
     container2[0].appendChild(childMain('left-content'));
     container2[0].appendChild(childMain('right-content'));
-  
+    
     function childSection(element) {
       let child = document.createElement('p');
       child.innerText = element;
@@ -76,5 +78,3 @@
 
       container6[0].appendChild(right);
     };
-
-   
