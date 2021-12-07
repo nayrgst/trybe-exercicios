@@ -3,8 +3,9 @@
   let container3 = document.getElementsByTagName('section');
   let container4 = document.getElementsByClassName('left-content');
   let container5 = document.getElementsByClassName('right-content');
-
-
+  let container6 = document.getElementsByClassName('numbers')
+  let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+  
   function createChild(element) {
   let newChild = document.createElement('h1');
   newChild.innerText = element;
@@ -50,6 +51,22 @@
     }
     
     container4[0].appendChild(leftChild('small-image'));
+    
+   function rightChild (element) {
+      let child =  document.createElement('ul')
+      child.className = element;
+      return child;
+    }
 
+    container5[0].appendChild(rightChild('numbers'));
+
+    for (let index = 0; index < array.length; index += 1) {
+      let list = array[index];
+
+      let right = document.createElement('li');
+      right.innerText = list;
+
+      container6[0].appendChild(right);
+    };
 
     
