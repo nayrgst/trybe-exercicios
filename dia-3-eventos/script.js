@@ -46,3 +46,19 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 
   }
         meses();
+      // ---------------------------------------RESOLVIDO-------------------------------------------
+
+      //----------------------------------EXERCICIO-2-----------------------------------------------
+
+      function botao (button) {
+        let botao = document.querySelector('.buttons-container')
+        let botao2 = document.createElement('button')
+        let botaoId = 'btn-holidday'
+        
+        botao2.innerHTML  = button
+        botao2.id = botaoId
+        botao.appendChild(botao2)
+      }
+        botao('Feriados');
+
+        
