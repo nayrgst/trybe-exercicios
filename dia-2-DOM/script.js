@@ -1,4 +1,7 @@
   let container = document.querySelector('body');
+  let container2 =  document.getElementsByTagName('main');
+  let container3 = document.getElementsByTagName('section');
+
 
   function createChild(element) {
   let newChild = document.createElement('h1');
@@ -18,7 +21,10 @@
 
 
 
-    let container2 =  document.getElementsByTagName('main');
-    let newChild = document.createElement('section');
-      newChild.className = 'center-content';
-    container2[0].appendChild(newChild);
+    function childMain(element) {
+    let newChildMain = document.createElement('section');
+      newChildMain.className = element;
+      return newChildMain
+    }
+    
+    container2[0].appendChild(childMain('center-content'));
