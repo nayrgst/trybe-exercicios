@@ -1,6 +1,8 @@
   let container = document.querySelector('body');
-  let container2 =  document.getElementsByTagName('main');
+  let container2 = document.getElementsByTagName('main');
   let container3 = document.getElementsByTagName('section');
+  let container4 = document.getElementsByClassName('left-content');
+  let container5 = document.getElementsByClassName('right-content');
 
 
   function createChild(element) {
@@ -28,3 +30,26 @@
     }
     
     container2[0].appendChild(childMain('center-content'));
+    container2[0].appendChild(childMain('left-content'));
+    container2[0].appendChild(childMain('right-content'));
+
+
+    function childSection(element) {
+      let child = document.createElement('p');
+      child.innerText = element;
+      return child;
+    }
+
+    container3[0].appendChild(childSection('exercicio-5.2'));
+
+    function leftChild (element) {
+      let child =  document.createElement('img')
+      child.setAttribute('src', 'https://picsum.photos/200');
+      child.className = element;
+      return child;
+    }
+    
+    container4[0].appendChild(leftChild('small-image'));
+
+
+    
