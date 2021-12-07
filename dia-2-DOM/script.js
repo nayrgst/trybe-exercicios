@@ -3,7 +3,7 @@
   let container3 = document.getElementsByTagName('section');
   let container4 = document.getElementsByClassName('left-content');
   let container5 = document.getElementsByClassName('right-content');
-  let container6 = document.getElementsByClassName('numbers')
+  let container6 = document.getElementsByClassName('numbers');
   let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
   
   function createChild(element) {
@@ -28,13 +28,21 @@
     let newChildMain = document.createElement('section');
       newChildMain.className = element;
       return newChildMain
+    };
+
+       function novoFilho(element) {
+      let newChildMain = document.createElement('h3');
+      newChildMain.className = element;
+      return newChildMain
     }
     
+    container2[0].appendChild(novoFilho('filhoH3'))
+    container2[0].appendChild(novoFilho('filhoH3'))
+    container2[0].appendChild(novoFilho('filhoH3'))
     container2[0].appendChild(childMain('center-content'));
     container2[0].appendChild(childMain('left-content'));
     container2[0].appendChild(childMain('right-content'));
-
-
+  
     function childSection(element) {
       let child = document.createElement('p');
       child.innerText = element;
@@ -69,4 +77,4 @@
       container6[0].appendChild(right);
     };
 
-    
+   
