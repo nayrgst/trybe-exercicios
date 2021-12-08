@@ -94,4 +94,28 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
             botao.appendChild(botao2)
           }
             sexta('Sexta-feira');
+            
+
+       //---------------------------------EXERCICIO-5-----------------------------------------------
+
+       function sextaFeiras(sexta) {
+  let botao = document.querySelector('#btn-friday');
+  let friday = document.getElementsByClassName('friday');
+  let newText = 'FINALMENTEEE';
+
+  botao.addEventListener('click', function() {
+  for (let index = 0; index < friday.length; index += 1) {
+    if (friday[index].innerHTML !== newText) {
+        friday[index].innerHTML = newText;
+    } else {
+        friday[index].innerHTML = sexta[index];
+      }
+    }
+  })
+};
+
+let dezFridays = [ 4, 11, 18, 25 ];
+sextaFeiras(dezFridays);
+
+
 
