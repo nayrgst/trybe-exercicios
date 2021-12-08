@@ -149,3 +149,18 @@ sextaFeiras(dezFridays);
       }
 
       element('Jogar:');
+
+  //---------------------------------------EXERCICIO-8-----------------------------------------------
+
+  function taskColor (color) {
+
+    let tasks = document.querySelector('.my-tasks')
+    let tasks2  = document.createElement('div')
+
+    tasks2.className  = 'task'
+    tasks2.style.backgroundColor = color
+    tasks.appendChild(tasks2)
+  }
+    taskColor('red')
+
+    
