@@ -163,4 +163,21 @@ sextaFeiras(dezFridays);
   }
     taskColor('red')
 
+ //---------------------------------------EXERCICIO-9-----------------------------------------------
+
+  function elementTask () {
     
+    let tasks = document.getElementsByClassName('task selected')
+    let tasks2 = document.querySelector('.task')
+
+    tasks2.addEventListener('click', function(event){
+      if (tasks.length === 0) {
+        event.target.className = 'task selected' 
+      } else {
+        event.target.className = 'task'
+      }
+    })
+  }
+      elementTask();
+
+      
