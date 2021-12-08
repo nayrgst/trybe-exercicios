@@ -53,12 +53,33 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
       function botao (button) {
         let botao = document.querySelector('.buttons-container')
         let botao2 = document.createElement('button')
-        let botaoId = 'btn-holidday'
+        let botaoId = 'btn-holiday'
         
         botao2.innerHTML  = button
         botao2.id = botaoId
         botao.appendChild(botao2)
       }
         botao('Feriados');
+      //----------------------------------------RESOLVIDO----------------------------------------------
 
+      //----------------------------------EXERCICIO-3-----------------------------------------------
+
+      function feriados () {
+        let botaoClick = document.querySelector('#btn-holiday')
+        let botao = document.querySelectorAll ('.holiday')
+        let color = 'rgb(238,238,238)'
+        let cor = '#283618'
+
+        botaoClick.addEventListener('click', function (){
+          for (let  index = 0; index < botao.length; index +=1) {
+            if (botao[index].style.backgroundColor === cor){
+                 botao[index].style.backgroundColor = color;
+            } else {
+              botao[index].style.backgroundColor = cor;
+            }
+          }
+        })
+      }
+        feriados ();
         
+
