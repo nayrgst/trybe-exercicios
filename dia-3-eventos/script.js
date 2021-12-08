@@ -138,3 +138,14 @@ sextaFeiras(dezFridays);
 
       zoom();
       zoomOri();
+//---------------------------------------EXERCICIO-7-----------------------------------------------
+
+      function element (task) {
+        let tasks = document.querySelector('.my-tasks')
+        let tasks2 = document.createElement('span')
+
+        tasks2.innerHTML = task
+        tasks.appendChild(tasks2)
+      }
+
+      element('Jogar:');
