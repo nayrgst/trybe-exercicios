@@ -30,7 +30,7 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
           dia2.innerHTML = dia;
           lista.appendChild(dia2);
         } else if (dia == 4 | dia == 11 | dia == 18) {
-          dia2.className = 'day fridday'
+          dia2.className = 'day friday'
           dia2.innerHTML = dia
           lista.appendChild(dia2)
         } else if (dia === 25) {
@@ -82,4 +82,16 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
       }
         feriados ();
         
+        //---------------------------------EXERCICIO-4-----------------------------------------------
+
+           function sexta (button) {
+            let botao = document.querySelector('.buttons-container')
+            let botao2 = document.createElement('button')
+            let botaoId = 'btn-friday'
+            
+            botao2.innerHTML  = button
+            botao2.id = botaoId
+            botao.appendChild(botao2)
+          }
+            sexta('Sexta-feira');
 
