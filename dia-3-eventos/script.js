@@ -66,7 +66,7 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 
       function feriados () {
         let botaoClick = document.querySelector('#btn-holiday')
-        let botao = document.querySelectorAll ('.holiday')
+        let botao = document.querySelectorAll('.holiday')
         let color = 'rgb(238,238,238)'
         let cor = '#283618'
 
@@ -180,4 +180,24 @@ sextaFeiras(dezFridays);
   }
       elementTask();
 
-      
+  //---------------------------------------EXERCICIO-10-----------------------------------------------
+
+  function mudarCores () {
+
+     let tasks = document.getElementsByClassName('task selected');
+  let dias = document.querySelector('#days');
+  let tasks2 = document.querySelector('.task');
+  let taskColor = tasks2.style.backgroundColor;
+  
+  dias.addEventListener('click', function(event){
+    let targetColor = event.target.style.color;
+    if (tasks.length > 0 && targetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (targetColor === taskColor && tasks.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+    mudarCores();
