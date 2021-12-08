@@ -117,5 +117,24 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 let dezFridays = [ 4, 11, 18, 25 ];
 sextaFeiras(dezFridays);
 
+      //---------------------------------EXERCICIO-6-----------------------------------------------
 
+      function zoom () {
+        let days = document.querySelector('#days')
 
+          days.addEventListener('mouseover', function(event) {
+            event.target.style.fontWight='300'
+            event.target.style.fontSize='25px'
+          })
+      }
+      function zoomOri() {
+        let days = document.querySelector('#days')
+
+        days.addEventListener('mouseout', function(event) {
+          event.target.style.fontWight='150'
+          event.target.style.fontSize='20px'
+        })
+      }
+
+      zoom();
+      zoomOri();
