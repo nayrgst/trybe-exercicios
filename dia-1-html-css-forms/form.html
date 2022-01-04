@@ -7,6 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+  <form action="GET">
+  <fieldset>
+    <p>Nome</p>
+    <input type="text" maxlength="40" required>
+    <br>
+    <p>Email</p>
+    <input type="text" maxlength="50" required>
+    <br>
+    <p>CPF</p>
+    <input type="text" maxlength="11" required>
+    <br>
+    <p>Endereço</p>
+    <input type="text" maxlength="200" required>
+    <br>
+    <p>Cidade</p>
+    <input type="text" maxlength="28" required>
+    <br>
+    <select name="Estado" id="estados" required ></select>
+    <br>
+    <input type="radio" id="cs" name="local" required>
+    <label for="cs">Casa</label>
+    <input type="radio" id="ap" name="local" required>
+    <label for="ap">Apartamento</label>
+  </fieldset>
+  </form>
+  <script src="script.js"></script>
 </body>
 </html>
