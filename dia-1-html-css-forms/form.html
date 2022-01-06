@@ -7,44 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-  <form action="GET">
+  <form id="form" action="GET">
   <fieldset>
-    <p>Nome:</p>
-    <input type="text" maxlength="40" required>
+    <label for="name">Nome:</label>
+    <input type="text" maxlength="40"  id="name" name="name" >
     <br>
-    <p>Email:</p>
-    <input type="text" maxlength="50" required>
+    <label for="email">Email:</label>
+    <input type="email " name="email" maxlength="50" required id="email">
     <br>
-    <p>CPF:</p>
-    <input type="text" maxlength="11" required>
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" maxlength="11" required id="cpf"> 
     <br>
-    <p>Endereço:</p>
-    <input type="text" maxlength="200" required>
+    <label for="endereço">Endereço:</label>
+    <input type="text" name="endereço" maxlength="200" required id="endereço" > 
     <br>
-    <p>Cidade:</p>
-    <input type="text" maxlength="28" required>
+    <label for="cidade">Cidade:</label>
+    <input type="text" name="cidade" maxlength="28" required id="cidade">
     <br>
-    <p>Estado:</p>
-    <select name="Estado" id="estados" required ></select>
+    <label for="estado">Estado:</label>
+    <select name="Estado" name="estado" required id="estados"></select>
     <br>
     <br>
-    <input type="radio" id="cs" name="local" required>
+    <p>Mora em:</p>
+    <input type="radio" id="cs" name="local" value="casa" required>
     <label for="cs">Casa</label>
-    <input type="radio" id="ap" name="local" required>
+    <input type="radio" id="ap" name="local" value="ap" required>
     <label for="ap">Apartamento</label>
   </fieldset>
   <br>
   <fieldset>
-    <textarea name="curriculo" id="cur" maxlength="1000" placeholder="Resumo do currículo" required ></textarea>
-    <p>Cargo:</p>
-    <input type="text" maxlength="40" required>
-    <p>Descrição do cargo:</p>
-    <input type="text" maxlength="500" required>
+    <label for="curriculo">Resumo de curriculo</label>
+    <br>
+    <textarea name="curriculo" id="cur" maxlength="1000"  required  cols="100" rows="20" ></textarea>
+    <br>
+    <label for="cargo">Cargo:</label>
+    <br>
+    <input name="cargo" type="text" maxlength="40" required id="cargo">
+    <br>
+    <label for="DecCargo">Descrição</label>
+    <br>
+    <input type="text" maxlength="500" name="DecCargo" required id="decCargo">
     <br>
     <p>Data de inicio:</p>
-    <input type="date" name="Data de inicio" id="alert">
+    <input type="date" name="Data de inicio" id="date" >
   </fieldset>
+
+  <button type="submit" id="bt">Enviar</button>
+  <button class="clear" type="button">Limpar</button>
   </form>
+  <div class='container' ></div>
   <script src="script.js"></script>
 </body>
 </html>
