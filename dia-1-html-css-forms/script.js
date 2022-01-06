@@ -56,9 +56,9 @@ function validarEstado(){
   };
 };
 
-//ajuda do DEUSSSS KAELL 
-const moradia = document.querySelector('input[name=local]:checked')
+//ajuda do DEUSSSS KAELL e da DEUSA Débora!!!
 function validarMoradia(){
+  const moradia = document.querySelector('input[name=local]:checked')
   if (moradia === null) {
     alert('Campo de MORADIA vázio!!');
   };
@@ -66,7 +66,7 @@ function validarMoradia(){
 
 const resumo = document.querySelector('#cur');
 function validarResumo(){
-    if(resumo.value.length > 1000 || resumo.value.length === 0){ alert('Campo de RESUMO vázio!!')
+    if(resumo.value.length > 1000 || resumo.value.length === 0){ alert('Campo de RESUMO vázio!!');
     };
   };
 
@@ -107,7 +107,7 @@ function clicks(event){
   validarData();
 };
 
-button.addEventListener('click', clicks)
+button.addEventListener('click', clicks);
 
 criarOps();
  function divs(){
@@ -133,7 +133,7 @@ criarOps();
   div7.innerHTML = `Moradia  : ${moradia.value}`
   div8.innerHTML = `Resumo   : ${resumo.value}`
   div81.innerHTML = `Cargo   : ${cargo.value}`
-  div9.innerHTML = `Descrição do cargo : ${descricao.value}`
+  div9.innerHTML = `Descrição de cargo : ${descricao.value}`
   div10.innerHTML = `Data de incio : ${data.value}`
   container.appendChild(div)
   container.appendChild(div2)
@@ -149,4 +149,4 @@ criarOps();
 };
 
 
-button.addEventListener('click', divs)
+button.addEventListener('click', divs);
