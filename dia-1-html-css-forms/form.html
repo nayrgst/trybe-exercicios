@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form id="form" action="GET">
+  <fieldset>
+    <label for="name">Nome:</label>
+    <input type="text" maxlength="40"  id="name" name="name" >
+    <br>
+    <label for="email">Email:</label>
+    <input type="email " name="email" maxlength="50" required id="email">
+    <br>
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" maxlength="11" required id="cpf"> 
+    <br>
+    <label for="endereço">Endereço:</label>
+    <input type="text" name="endereço" maxlength="200" required id="endereço" > 
+    <br>
+    <label for="cidade">Cidade:</label>
+    <input type="text" name="cidade" maxlength="28" required id="cidade">
+    <br>
+    <label for="estado">Estado:</label>
+    <select name="Estado" name="estado" required id="estados"></select>
+    <br>
+    <br>
+    <p>Mora em:</p>
+    <input type="radio" id="cs" name="local" value="casa" required>
+    <label for="cs">Casa</label>
+    <input type="radio" id="ap" name="local" value="ap" required>
+    <label for="ap">Apartamento</label>
+  </fieldset>
+  <br>
+  <fieldset>
+    <label for="curriculo">Resumo de curriculo</label>
+    <br>
+    <textarea name="curriculo" id="cur" maxlength="1000"  required  cols="100" rows="20" ></textarea>
+    <br>
+    <label for="cargo">Cargo:</label>
+    <br>
+    <input name="cargo" type="text" maxlength="40" required id="cargo">
+    <br>
+    <label for="DecCargo">Descrição</label>
+    <br>
+    <input type="text" maxlength="500" name="DecCargo" required id="decCargo">
+    <br>
+    <p>Data de inicio:</p>
+    <input type="date" name="Data de inicio" id="date" >
+  </fieldset>
+
+  <button type="submit" id="bt">Enviar</button>
+  <button id="clear" type="reset">Limpar</button>
+  </form>
+  <div class='container'></div>
+  <script src="script.js"></script>
+</body>
+</html>
