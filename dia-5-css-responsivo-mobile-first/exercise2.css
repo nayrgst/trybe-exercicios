@@ -18,7 +18,7 @@ html {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 720px) {
   body {
     background-color: #7fb800;
     color: #0d2c54;
