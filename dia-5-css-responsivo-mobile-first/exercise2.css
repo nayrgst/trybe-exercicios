@@ -2,12 +2,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 @media screen and (min-width: 320px) {
-  body{
+  body {
     background-color: #0d2c54;
     color: #7fb800;
     text-align: center;
@@ -16,8 +18,8 @@ html {
   }
 }
 
-@media screen and (max-width: 320px){
-  body{
+@media screen and (max-width: 320px) {
+  body {
     background-color: #7fb800;
     color: #0d2c54;
   }
