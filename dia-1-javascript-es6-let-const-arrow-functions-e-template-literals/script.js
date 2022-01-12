@@ -57,7 +57,31 @@
 //   )
 // );
 
-let clickCount = 0;
-let btn = document.querySelector('#btn-ck');
-let clicks = document.querySelector('#contador')
-btn.addEventListener('click', () => clicks.innerHTML = clickCount+= 1 );
+// -----------------------------------------------parte 3-------------------------------------------------------------------
+// let clickCount = 0;
+// let btn = document.querySelector('#btn-ck');
+// let clicks = document.querySelector('#contador')
+// btn.addEventListener('click', () => clicks.innerHTML = clickCount+= 1 );
+
+// ------------------------------------------------- parte 4 ---------------------------------------------------------------
+
+const array = ["Jogar e ser ruim", "não ter noção", "ser completamente maluco"];
+
+const frase = (primeiro) => {
+  const index = (nome) => `Tryber ${nome} aqui! Tudo bem?`;
+
+  let resultado = `${index(primeiro)} Minhas principais habilidades são:`;
+
+  array.forEach(
+    (habilidades) =>
+      (resultado = `${resultado}
+    ${habilidades}`)
+  );
+  resultado = `
+    ${resultado} 
+
+      #goTrybe`;
+  return resultado;
+};
+
+console.log(frase("Ryan"));
