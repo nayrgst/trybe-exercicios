@@ -13,18 +13,30 @@
 
 // parte 2
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const crescente = () => {
-  oddsAndEvens[0] = 2;
-  oddsAndEvens[1] = 3;
-  oddsAndEvens[2] = 4;
-  oddsAndEvens[3] = 7;
-  oddsAndEvens[4] = 10;
-  oddsAndEvens[5] = 13;
+// const crescente = () => {
+//   oddsAndEvens[0] = 2;
+//   oddsAndEvens[1] = 3;
+//   oddsAndEvens[2] = 4;
+//   oddsAndEvens[3] = 7;
+//   oddsAndEvens[4] = 10;
+//   oddsAndEvens[5] = 13;
 
-  return oddsAndEvens;
-};
-const ordem = crescente();
+//   return oddsAndEvens;
+// };
+// const ordem = crescente();
 
-console.log(`Os números ${ordem} e encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉 s
+// console.log(`Os números ${ordem} e encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉 s
+
+
+const factorial = n => {
+  let f = 1;
+  for( let index = 1; index <= n; index += 1){
+    f *= index;
+  }
+  return f;
+}
+console.log(factorial(3));
+
+ 
