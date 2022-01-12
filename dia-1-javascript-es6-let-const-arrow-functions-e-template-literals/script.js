@@ -58,10 +58,10 @@
 // );
 
 // -----------------------------------------------parte 3-------------------------------------------------------------------
-// let clickCount = 0;
-// let btn = document.querySelector('#btn-ck');
-// let clicks = document.querySelector('#contador')
-// btn.addEventListener('click', () => clicks.innerHTML = clickCount+= 1 );
+let clickCount = 0;
+let btn = document.querySelector('#btn-ck');
+let clicks = document.querySelector('#contador')
+btn.addEventListener('click', () => clicks.innerHTML = clickCount+= 1 );
 
 // ------------------------------------------------- parte 4 ---------------------------------------------------------------
 
