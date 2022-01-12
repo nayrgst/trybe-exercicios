@@ -65,23 +65,23 @@
 
 // ------------------------------------------------- parte 4 ---------------------------------------------------------------
 
-const array = ["Jogar e ser ruim", "não ter noção", "ser completamente maluco"];
+// const array = ["Jogar e ser ruim", "não ter noção", "ser completamente maluco"];
 
-const frase = (primeiro) => {
-  const index = (nome) => `Tryber ${nome} aqui! Tudo bem?`;
+// const frase = (primeiro) => {
+//   const index = (nome) => `Tryber ${nome} aqui! Tudo bem?`;
 
-  let resultado = `${index(primeiro)} Minhas principais habilidades são:`;
+//   let resultado = `${index(primeiro)} Minhas principais habilidades são:`;
 
-  array.forEach(
-    (habilidades) =>
-      (resultado = `${resultado}
-    ${habilidades}`)
-  );
-  resultado = `
-    ${resultado} 
+//   array.forEach(
+//     (habilidades) =>
+//       (resultado = `${resultado}
+//     ${habilidades}`)
+//   );
+//   resultado = `
+//     ${resultado} 
 
-      #goTrybe`;
-  return resultado;
-};
+//       #goTrybe`;
+//   return resultado;
+// };
 
-console.log(frase("Ryan"));
+// console.log(frase("Ryan"));
