@@ -1,4 +1,4 @@
-// feito com a ajuda do nosso embaixador Gabriel fucking Pondaco!!
+// feito com a ajuda do nosso embaixador Gabriel fucking Pondaco!
 const verificar = (value1, value2) => {
   if (value1.length <= 0 || value2.length <= 0) {
     throw new Error('Coloque um valor!')
