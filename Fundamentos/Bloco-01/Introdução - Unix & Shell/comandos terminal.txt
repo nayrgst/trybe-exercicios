@@ -1,0 +1,85 @@
+comandos terminal:
+
+ls: lista arquivos e diretorios
+
+ls -a: lista todos os arquivos e diretórios
+
+mkdir: crie um diretório
+
+cd: muda para o diretorio root
+
+cd ..: volta para o diretorio anterior
+
+pwd: mostra o caminho inteiro do diretorio
+
+cp arquivo1 arquivo2: copia o arquivo1 e o chama de arquivo2
+
+mv arquivo1 arquivo2: move ou remomea arquivo para arquivo2
+
+rm arquivo: exclui o arquivo desejado
+
+rmdir retório: exclui um diretorio vazio desejado
+
+cat arquivo: exibe dados do arquivo
+
+less arquivo: exibe um aruqivo, em uma pagina por vez
+
+head arquivo: exibe as primeiras linhas de um arquivo
+
+head -n: e um número mostra as primeiras linhas desejadas de um arquivos
+
+tail arquivo: exibe as ultimas linhas de um arquivo
+
+tail -n: e um número mostra as ultimas linhas desejadas de um arquivos
+
+grep 'uma palavra' arquivo: exibe uma palavra desejada de um arquivo
+
+wc arquivo: mostra a quantidade de linhas, palavras e caracteres do arquivo
+
+*: corresponde a qualquer numero de caracteres
+
+?: corresponde a um caracter
+
+man: serve para saber oq os comandos fazem
+
+whatis: mostra um pequena descrição do que um comando faz
+
+apropos 'uma palavra': corresponde a comando com uma palavra em suas paginas de manual
+
+comando > arquvio: redireciona a saída padrão para um arquivo
+
+comando >> arquivo: anexa saída padrão a um arquivo
+
+comando < arquvio: redireciona a entrada padrão de um arquivo
+
+comando1 | comando2: canaliza a saida do comando1 para a entrada do comando2
+
+cat arquivo1 arquivo2 > arquivo0: concatena arquivo1 e arquivo2 em arquivo0
+
+sort: ordena os dados 
+
+who: lista os usuários atualmente logados
+
+ls -lag: lista direitos de acesso para os arquivos
+
+chmod [options] arquivo: altera os direitos de acesso para o arquivo nomeado
+
+comandos &: exuta o comando em segundo plano
+
+ctrl + C: elima o trabalho em execução em primiero plano
+
+ctrl + Z: suspende o trabalho em execução em primeiro plano
+
+bg: retorna processos que estão suspensos
+
+jobs: lista processos suspensos e em segundo plano
+
+fg %1: reinicia o primiero processo suspenso
+
+kill %1: encerra o primeiro processo suspenso
+
+ps: lista processos atuais
+
+kill + numero de processo: encerra o processo numerado declarado
+
+ find , history .
