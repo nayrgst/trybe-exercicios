@@ -1,0 +1,39 @@
+.primaria{
+    background-color:rgb(50, 144, 233);
+    font-family: monospace;
+}
+
+.secundaria{
+    background-color: orange;
+    font-family: sans-serif;
+    border-color: rgb(14, 240, 14);
+}
+
+.complementar{
+    background-color: rgb(250, 0, 250);
+    font-family: arial;
+    border-color: rgb(250, 250,0);
+}
+
+.escuras{
+    background-color:rgb(23, 51, 23);
+    font-family: Times, serif;
+    color: white;
+    border-color: purple;
+}
+
+.claras{
+    background-color: rgb(211, 211, 110);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    border-color: black;
+
+}
+
+div:hover{
+    border-style: solid;
+}
+
+h3{
+    font-style: italic;
+}
