@@ -1,0 +1,12 @@
+Array.forEach:
+forEach é como se fosse o for tradicional, porém bem mais simples e facil de fazer. basicamente o percorre um array e faz assim como o for normal
+
+Array.find:
+
+
+Array.some e Array.every:
+
+
+Array.sort:
+
+

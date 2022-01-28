@@ -1,0 +1,9 @@
+Firt-Class function: 
+Uma linguaguem é dita ter First-Class Functions quando trata suas funções como first class citizens (isto é, cidadãos de primeira classe), ou seja, elas suportam as mesmas operações que estão disponíveis para os outros tipos. Isso significa que nossas funções podem ser atribuídas à variáveis, passadas como argumento e/ou retornadas por outras funções. 
+
+Higher Order Function: 
+As HOFs são funções que usam outras funções em suas operações, devendo aceitá-las como parâmetro e/ou retorná-las. O mais incrível é que você já aplicou este conceito na prática. O addEventListener é um exemplo de HOF. A HOF é uma função que pode receber outra função como parametro ou retornar uma função.
+
+Estruturando uma HOF:
+Para estruturar uma HOF, tem que se colocar a função que faça algo dentro da função que será chamada, assim que ela é chamada ela chama as funções que estão dentro dela.
+
