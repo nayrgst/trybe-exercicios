@@ -1,20 +1,19 @@
 import React, { Component } from 'react'
 
-class Cidade extends Component {
+class DescricaoDoCargo extends Component {
   render() {
     
     const { value, handleGenerico } = this.props
 
     return (
-      <div> Cidade: <br/>
+      <div> Escreva seu DescricaoDoCargo:<br/>
         <input 
           type="text" 
-          name='cidade'
+          name='descricaoDoCargo'
           value={value}
           onChange={ handleGenerico }
-          maxLength='28'
-          placeholder='Digite o nome da sua Cidade meu nobre'
-          required
+          maxLength='500'
+          placeholder='Descreva seu cargo meu nobre!'
           />
       </div>
     )
@@ -24,4 +23,4 @@ class Cidade extends Component {
 
 }
 
-export default Cidade
+export default DescricaoDoCargo
